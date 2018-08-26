@@ -4,7 +4,7 @@ FROM amazonlinux
 RUN yum -y upgrade \
     && yum -y update \
     && yum -y install java-1.8.0-openjdk-devel \
-    && yum -y install wget nano which git
+    && yum -y install wget nano which git tar
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && python2 get-pip.py
 
